@@ -13,6 +13,14 @@ import { ListBeachesComponent } from './container/list-beaches/list-beaches.comp
 import { BeachComponent } from './container/list-beaches/beach/beach.component';
 import { LeftBeachesComponent } from './container/left-beaches/left-beaches.component';
 import { BookingComponent } from './booking/booking.component';
+import { FirstComponent } from './first/first.component';
+import { ContainerBookingComponent } from './booking/container-booking/container-booking.component';
+import { InfoBeachComponent } from './booking/info-beach/info-beach.component';
+import { ScheduleComponent } from './booking/schedule/schedule.component';
+import { ActivityComponent } from './booking/info-beach/activity/activity.component';
+import { BookingButComponent } from './booking/schedule/booking-but/booking-but.component';
+import { PlanningComponent } from './booking/schedule/planning/planning.component';
+import { CommentsComponent } from './booking/comments/comments.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +33,16 @@ import { BookingComponent } from './booking/booking.component';
     ListBeachesComponent,
     BeachComponent,
     LeftBeachesComponent,
-    BookingComponent
+    BookingComponent,
+    FirstComponent,
+    ContainerBookingComponent,
+    InfoBeachComponent,
+    ScheduleComponent,
+    ActivityComponent,
+    BookingButComponent,
+    PlanningComponent,
+    CommentsComponent,
+    
   ],
   imports: [
     BrowserModule,
