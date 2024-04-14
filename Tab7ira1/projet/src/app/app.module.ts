@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { Routes , RouterModule} from '@angular/router';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +23,22 @@ import { ActivityComponent } from './booking/info-beach/activity/activity.compon
 import { BookingButComponent } from './booking/schedule/booking-but/booking-but.component';
 import { PlanningComponent } from './booking/schedule/planning/planning.component';
 import { CommentsComponent } from './booking/comments/comments.component';
+import { CommentComponent } from './booking/comments/comment/comment.component';
+import { RequestsComponent } from './requests/requests.component';
+import { RequestComponent } from './requests/request/request.component';
+import { ModifyRestaurantComponent } from './modify-restaurant/modify-restaurant.component';
+import { ResturantComponent } from './resturant/resturant.component';
+import { AdminPanelComponent } from './booking/admin-panel/admin-panel.component';
+import { Booking1Component } from './booking1/booking1.component';
+
+
+const routes : Routes = [
+  {path:'booking' , component: BookingComponent},
+  {path:'' , component: ContainerComponent},
+  {path:'modify-restaurant' , component: ModifyRestaurantComponent},
+  {path:'resturant', component: ResturantComponent},
+  {path:'booking1' , component:Booking1Component}
+]
 
 @NgModule({
   declarations: [
@@ -42,12 +60,20 @@ import { CommentsComponent } from './booking/comments/comments.component';
     BookingButComponent,
     PlanningComponent,
     CommentsComponent,
+    CommentComponent,
+    RequestsComponent,
+    RequestComponent,
+    ModifyRestaurantComponent,
+    ResturantComponent,
+    AdminPanelComponent,
+    Booking1Component,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [
     provideClientHydration()
