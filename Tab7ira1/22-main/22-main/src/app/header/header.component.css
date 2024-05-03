@@ -1,0 +1,12 @@
+app-title{
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    margin-left: 10px;
+    
+}
+
+.row{
+    background-color:#1a7f75 ;
+    height: 50px; /* ou toute autre valeur appropriée */
+
+} 

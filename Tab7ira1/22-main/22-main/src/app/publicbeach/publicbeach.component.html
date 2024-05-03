@@ -1,0 +1,48 @@
+<div class="container1">
+<form>
+    <div class="row">
+        <div class="col-8 offset-1"><h3 class="tit">ADD Public Beach</h3></div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-5 offset-1">
+            <label class="form-label" for="beachname">Beach Name</label>
+            <input type="text" class="form-control" id="beachname" [(ngModel)]="publicObj.beach_name" name="beachName" required>
+        </div>
+        <div class="col-5">
+            <label class="form-label" for="location">Location</label>
+            <input class="form-control" type="text" id="location" [(ngModel)]="publicObj.location" name="location" required>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-5 offset-1">
+            <label class="form-label" for="city">City</label>
+            <select class="form-select" id="city" [(ngModel)]="publicObj.city" name="city">
+                <option value="Djerba">Djerba</option>
+                <option value="Hammamet">Hammamet</option>
+                <option value="Tunis">Tunis</option>
+            </select>
+        </div>
+        <div class="col-5">
+            <label class="form-label" for="photos">Beach Photos</label>
+            <input class="form-control" type="file" id="input-photos" [(ngModel)]="publicObj.beach_photos" name="beachPhotos">
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-10 offset-1">
+            <label class="form-label" for="description">Description</label>
+            <textarea class="form-control" id="description" [(ngModel)]="publicObj.description" name="description" required></textarea>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-5 offset-1">
+            
+        </div>
+        <!-- idUser<input type="number" name="idUser" id="idUsers" [(ngModel)]="publicObj.id_user"> -->
+        <div class="col-5">
+            <div class="d-grid">
+                <button class="btn btn-submit btn-block a1" (click)="add()" type="submit">ADD</button>
+            </div>
+        </div>
+    </div>
+</form>
+</div>

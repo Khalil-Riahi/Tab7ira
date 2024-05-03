@@ -1,0 +1,60 @@
+<div class="container1">
+    <form>
+        <div class="row ">
+            <div class="col-8 offset-1"><h3 class="tit">Add Your Private Beach</h3></div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-5 offset-1">
+                <label class="form-label" for="Privatebeachname">Beach Name</label>
+                <input type="text" class="form-control" id="Privatebeachname" [(ngModel)]="privateObj.beach_name" name="beachName" required>
+            </div>
+            <div class="col-5">
+                <label class="form-label" for="input-location">Location</label>
+                <input class="form-control" type="text" id="input-location" [(ngModel)]="privateObj.location" name="location" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-5 offset-1">
+                <label class="form-label" for="menu">Menu Photos</label>
+                <input class="form-control" type="file" id="menu" [(ngModel)]="privateObj.menu" name="menu">
+            </div>
+            <div class="col-5">
+                <label class="form-label" for="input-photos">Restaurant Photos</label>
+                <input class="form-control" type="file" id="input-photos" [(ngModel)]="privateObj.beach_photos" name="beachPhotos">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-5 offset-1">
+                <label class="form-label" for="input-city">City</label>
+                <select class="form-select" id="input-city" [(ngModel)]="privateObj.city" name="city">
+                    <option value ="Djerba">Djerba</option>
+                    <option value ="Hammamet">Hammamet</option>
+                    <option value="Tunis">Tunis</option>
+                </select>
+            </div>
+            <div class="col-5">
+                <label class="form-label" for="input-type">Beach Type</label>
+                <select class="form-select" id="input-type" [(ngModel)]="privateObj.type_of_the_private_beach" name="beachType" required>
+                    <option value ="Lounge">Lounge</option>
+                    <option value ="Restaurant">Restaurant</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-10 offset-1">
+                <label class="form-label" for="desc">Description</label>
+                <textarea class="form-control" id="desc" [(ngModel)]="privateObj.description" name="description"></textarea>
+            </div>
+        </div>
+        <div class="row mb-3">
+           <!-- <div class="col-5">
+            idUser<input type="number" name="idUser" id="idUsers" [(ngModel)]="privateObj.id_user">
+           </div> -->
+            <div class="col-5">
+                <div class="d-grid">
+                    <button class="btn btn-block a1" (click)="saveInfo()">Add</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

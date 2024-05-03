@@ -1,0 +1,39 @@
+<div class="hhhh">
+<div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="../../assets/beach.jpg" alt="">
+       
+      </div>
+      <div class="back">
+        <img class="backImg" src="../../assets/beach.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Complete miles of journey <br> with one step</span>
+          <span class="text-2">Let's get started</span>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+            <div class="login-form">
+                <div class="title" >Login</div>
+                <form>
+                    <div class="input-boxes">
+                        <div class="input-box">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" placeholder="Enter your email" required [(ngModel)]="userObj.signInEmail" name="signinEmail">
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Enter your password" required [(ngModel)]="userObj.signInPassword" name="loginPassword">
+                        </div>
+                        <div class="button input-box">
+                            <button (click)="log()"  type="submit" class="hh">Login</button>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+
+        </div>

@@ -1,0 +1,14 @@
+div{
+    display: flex;
+    align-items: right ;
+    justify-content: right;
+    
+}
+
+p{
+    padding-top: 20px;
+    color: aliceblue;
+    position: absolute;
+    top: 0;
+    
+}

@@ -1,0 +1,91 @@
+div{
+    width:100vw;
+    height: 150vh;
+
+background-image:url(../../assets/background.jpg) ;
+
+background-size:cover;
+background-position: 100%;
+background-repeat: no-repeat;
+
+
+overflow: hidden;
+
+
+}
+
+p{
+    font-size:xx-large;
+    margin-top: 20%;
+    margin-left: 8%;
+    color: white;
+    background-image: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+.search{
+    background-image: none;
+   position: relative;
+}
+i{
+    margin-left: 300px;
+    cursor: pointer;
+
+}
+ul{
+    list-style: none;
+    width: 90%;
+    text-align: right;
+    padding-right: 30px;
+    }
+ li{
+     display: inline-block;
+     margin: 10px 20px;
+ }
+ #logo {
+     position: absolute;
+     top: -50px;
+     left: -20px;
+     width: 300px; /* Définissez la largeur souhaitée */
+     height: auto; /* Pour conserver les proportions de l'image */
+ }
+ form {
+    background-color: rgba(255, 255, 255, 0.45);
+    width: 80%;
+    height: 100px; /* Augmenter la hauteur de la barre de recherche */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: calc(50vh - -50px); /* Ajuster la position verticale pour que la barre de recherche soit légèrement en bas */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 20px;
+  }
+  
+  
+  select {
+    color: #F24E1E;
+    font-weight: bold;
+    cursor: pointer;
+    width: 70%;
+    height: 35px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .sss {
+    background-color: #F24E1E;
+    border: none;
+    width: 400px;
+    height: 35px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+  
+  
+  }
+  

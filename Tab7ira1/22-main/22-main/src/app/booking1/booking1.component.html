@@ -1,0 +1,40 @@
+<form>
+    <div class="row">
+        <div class="col-5 offset-1 tit">
+            <h4>Reservation</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-5 offset-1">
+            <label class="form-label" for="dt">Date</label>
+            <input id="dt" class="form-control" type="date" [(ngModel)]="publicObj.date" name="dt" required>
+        </div>
+        <div class="col-5">
+            <label class="form-label" for="time">Time</label>
+            <input class="form-control" id="time" [(ngModel)]="publicObj.time_booking" name="time" required>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-5 offset-1">
+            <label class="form-label" for="fn">Phone Number</label>
+            <input id="fn" class="form-control" type="tel" [(ngModel)]="publicObj.phone_number" name="fn" required>
+        </div>
+        <div class="col-5"> 
+            <label class="form-label" for="np">Number of places</label> 
+            <input class="form-control" id="np" type="number" [(ngModel)]="publicObj.number_places" name="np">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-5 offset-1">
+            <div class="d-grid">
+              
+            </div>      
+        </div >
+        <div class="col-5">
+            <div class="d-grid">
+                <button class="btn btn-submit btn-block" type="button" (click)="add()">Reserve</button>
+            </div>           
+        </div>  
+    </div>  
+</form>
