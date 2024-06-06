@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Public} from '../../shared/addPublic.model';
+import { application } from 'express';
 
 @Injectable({
   providedIn: 'root'
@@ -10,6 +11,7 @@ export class PublicbeachService {
   
   url:string = 'http://localhost/Tab7ira/addPublic.php';
   constructor(public http:HttpClient) { }
+  
   addPublicbeach(a:Public){
     return this.http.post(this.url,a);
   }
@@ -27,6 +29,11 @@ export class PublicbeachService {
   }
 
   modifierBeach(p:Public){
+
+    let headers = new HttpHeaders();
+    headers = headers.set('content-type' , 'application/json');
+    headers = headers.set('Access-Control-Allow-Origin' , '*');
+
     let Obj:any = {
       
         id_public_beach: p.id_public_beach,
